@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EzComm About</title>
+  <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='logo.png')}}" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<style type="text/css">
+		body{
+			background: url("{{url_for('static', filename='b.jpg')}}"); 
+    		background-repeat: no-repeat;
+    		background-size: 100% 100%;
+    		background-position: center;
+    		background-attachment: fixed;
+    		width: 1519px;
+    		height: 2000px;
+		}
+		a img {
+			height: 160%;
+			padding-bottom: 10px;
+			width: 70%;
+		}
+		body,html {
+    		width: 100%;
+		    height: 160%;
+		    color: white;
+		}
+		span{
+			color: white;
+			font-size: 18px;
+			}
+		.navbar-brand {
+			padding-top:5px;
+			height: 60px;
+		}
+
+		.nav {
+			padding-top: 15px;
+		}
+		.navbar {
+			height: 65px;
+		}
+		.jumbotron{
+			text-align: center;
+			background-color: transparent;
+			margin-top: 100px;
+		}
+		#collbutton {
+			margin-top: 15px;
+		}
+		#sp {
+			border-radius: 10px;
+			padding-left: 50px;
+			padding-right: 50px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			background: white;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+		}
+		#sp1 {
+			text-align: justify;
+			color: black;
+			font-family: Source Sans Pro;
+			font-weight: 600;
+			font-size: 20px;
+		}
+		#sp2 {
+			color: black;
+			font-family: Source Sans Pro;
+			font-weight: 800;
+			font-size: 30px;
+		}
+		video {
+			box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2), 5px 5px 5px 0 rgba(0, 0, 0, 0.24);
+		}
+		#hi {
+      margin-top: 15px;
+      color: #ADB0B2;
+    }
+    #hi:hover {
+      color: white;
+    }
+	</style>
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button id="collbutton" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="width: 45px; height: 35px;">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/foo"><img src="{{url_for('static', filename='logo.png')}}"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="/foo">Home</a></li>
+          <li class="active"><a href="/foo10">About</a></li>
+          <li><a href="/foo5">Model</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <p id="hi">A Communication Interface for the Vocally and Hearing Impaired</p>
+        </ul>
+      </div>
+    </div>
+  </nav>
+	<div class="container">
+		<div class="jumbotron">
+			<video width="60%" height="100%" controls>
+  				<source src="C:\Users\Sukruth\Desktop\Software Project\Final Video1.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div id="sp">
+		<h3 id="sp2"><strong>WHAT WE DO:</strong></h3>
+		<br>
+			<p id="sp1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gesture recognition is an effort towards studying the challenges in the classification of characters
+in Indian Sign Language (ISL). A lot of research has already been done in the corresponding field
+of American Sign Language (ASL), but unfortunately the same cannot be said for ISL. This project
+deals with the recognition and detection of hand gestures. Images of the hand gestures are taken
+using a camera and matched with the images in the dataset and the best match is returned. Lack of
+standard datasets, occluded features and variation in the language with locality have been the major
+barriers which have led to a little research being done in Indian Sign Language. Our project aims
+to reduce the communication gap between the vocally disabled people and the normal people who
+do not know sign language at all. This project detects alphabets (A-Z) and numbers (0-9) in Indian Sign Language. It also converts Speech to Text, Text to Speech, Text to Sign and Speech to Sign.</p>
+		<br>
+		<h3 id="sp2"><strong>STEPS:</strong></h3>
+		<ul>
+    		<br>
+    		<li id="sp1"><p id="sp1">NOTE: This project works only on Indian Sign Language.</p></li>
+			<br>
+			<li id="sp1"><p id="sp1">On opening the model page of EZComm, you will be asked to choose between two options: Sign detection and Sign conversion.</p></li>
+			<br>
+			<li id="sp1"><p id="sp1">In the sign detection page there are three options: Set histogram, numerical sign and alphabet sign. First of all, you will have to click the Set histogram button and configure your hand. Then if you want the program to detect numbers (0-9) then click on the numerical sign button. If you want the program to detect alphabets (A-Z) then click on the alphabet sign button.</p></li>
+			<br>
+			<li id="sp1"><p id="sp1">In the Sign conversion page there are four options: Speech to Text, Text to Speech, Text to Sign and Speech to Sign. You can perform the tasks you want by clicking the respective buttons.</p></li>
+		</ul>
+		<br>
+		<br>
+		<h3 id="sp2"><strong>CREDITS:</strong></h3>
+		<br>
+		<p id="sp1">Initiative by 4 Thaparians:</p>
+		<br>
+		<ul>
+		<li id="sp1">SUKRUTH G - 101610089</p></li>
+		<li id="sp1">ARSHIT GOEL - 101603057</p></li>
+		<li id="sp1">ARUSHI AGGARWAL - 101603058</p></li>
+		<li id="sp1">ASEES - 101610017</p></li>
+		</ul>
+	</div>
+	</div>
+</body>
+</html>
